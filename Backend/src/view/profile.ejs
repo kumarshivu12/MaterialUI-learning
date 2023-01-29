@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>profile page</title>
+</head>
+<body>
+    <%- include(common/navbar)%>
+    <h1>Profile Page</h1>
+    <h3>Welcome <%= user.name%></h3>
+    <h5>ID: <%= user.id%></h5>
+    <ul>
+        <% user.skills.forEach((item)=>{%>
+            <li><%= item%></li>
+        <% })%>
+    </ul>
+</body>
+</html>
